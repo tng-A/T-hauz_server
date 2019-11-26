@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 
     'corsheaders',
     'rest_framework',
+    'graphene_django',
     
     'src.api.apps.ApiConfig'
 ]
@@ -70,6 +71,9 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 
 ROOT_URLCONF = 't_hauz_server.urls'
+GRAPHENE = {
+    'SCHEMA': 't_hauz_server.schema.schema'
+}
 
 TEMPLATES = [
     {
